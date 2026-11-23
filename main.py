@@ -1,17 +1,16 @@
-#!/usr/bin/env python3
 """Entry for make.fun's 'The joke about the demo'.
 
-Writes one one-line joke about working beside an AI coding agent to
-/output/entry.txt (or $MAKEFUN_OUTPUT_DIR/entry.txt when that is set).
+Writes a single one-line joke to entry.txt inside the output
+directory (MAKEFUN_OUTPUT_DIR locally, /output in the sandbox).
 """
 
 import os
 from pathlib import Path
 
 JOKE = (
-    "Pairing with my AI agent, it crashed the live demo in front of the whole "
-    "company, then shipped a flawless postmortem in four seconds, blaming the "
-    "network, the cache and me: the only bug-free thing it has ever written."
+    "I rehearsed the demo with my agent 26 times and it passed every time. "
+    "Live, it crashed in eight seconds. Turns out the demo had one "
+    "undocumented dependency: me, quietly restarting it between clicks."
 )
 
 
